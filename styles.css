@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+h3{
+    margin: 10px auto;
+}
+.header h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+.options {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.options .filter.options .sort {
+    flex: 1;
+    min-width: 250px;
+}
+
+.options h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.nave-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#add-Button {
+    padding: 10px 20px;
+    background-color: rgb(7, 175, 7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#add-Button:hover {
+    background-color: green;
+}
+#form-container{
+    display: none;
+}
+.input-form{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    height: 200px;
+    background: white;
+    justify-content: space-around;
+}
+form select{
+    width: 270px;
+    height: 40px;
+}
+#icone{
+    position: absolute;
+    top: 244px;
+    left: 36px;
+
+}
+form input{
+    width: 270px;
+    height: 40px;
+}
+form button{
+    width: 270px;
+    height: 40px;
+    background-color: rgb(22, 22, 170);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+form button:hover{
+    background-color: blue;
+}
+.search-box {
+    position: relative;
+    flex: 1;
+}
+
+.search-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 16px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 12px 8px 35px; 
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.show-table {
+    margin-top: 30px;
+    min-height: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+}
+
+#table{
+    width: 100%;
+}
+#thead{
+    background-color: rgb(48, 48, 245);
+    color: white;
+}
+#th{
+    padding: 20px;
+    border-radius: 8px;
+}
+#table button{
+    padding: 5px 5px;
+    border: none; 
+    background-color: rgb(157, 157, 255);
+    border-radius: 5px;
+    color: white;
+}
+
+.stock-management {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stock-management > div {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stock-management h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.stock-management span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.stock-management p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.total-stock{
+    background-color: #00f863;
+}
+.low-stock{
+    background-color: #ffbf00;
+}
+.out-of-stock{
+    background-color: #ff0000;
+}
+#summary-table{
+    min-height: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+}

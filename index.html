@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <h3><i class="fa-solid fa-warehouse"></i>Inventory Management System</h3>
+    </div>
+
+    <div class="options">
+        <div class="filter">
+            <h4>Filter by Categoeries:</h4>
+            <select name="filter" id="filter-Categoeries">
+                <option value="all">All Categoeries</option>
+              
+              </select>
+        </div>
+    
+        <div class="sort">
+            <h4>Sort by:</h4>
+            <select name="sort" id="sort">
+                <option value="default">Default</option>
+                <option value="a-z">A to Z</option>
+                <option value="z-a">Z to A</option>
+                <option value="low-high">Low to High price</option>
+                <option value="high-low">High to low price</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="nave-bar">
+        <button id="add-Button"><i class="fa-solid fa-plus"></i>Add Product</button>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search" type="search" placeholder="Search by Product Name ..." />
+        </div>
+    </div>
+
+    <div id="form-container">
+        <div class="input-form">
+        
+            <h1>Add/Edit Product</h1>
+            <div id="icone">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <form>
+                <input id="name" type="text" placeholder="Product Name ...">
+                <input id="quantity" type="number" placeholder="Quantity ...">
+                <input id="price" type="number" placeholder="Price ...">
+                <input id="image" type="url" placeholder="Image ...">
+                <select id="filter" name="filter">
+                    <option value="all">All Categoeries</option>
+                  </select>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="show-table">
+
+    </div>
+
+    <div class="stock-management">
+        <div class="total-stock">
+            <h3>Total Stock Value</h3>
+            <span id="totalPrice">₹0.00</span>
+            <p>Toatl value of all available stock</p>
+        </div>
+        <div class="low-stock">
+            <h3>Low Stock Items</h3>
+            <span id="low-item">0</span>
+            <p>Items with quantity below threshold</p>
+        </div>
+        <div class="out-of-stock">
+            <h3>Out of Stock</h3>
+            <span id="no-stock">0</span>
+            <p>Products currently out of stock</p>
+        </div>
+    </div>
+
+    <h3>Categoery-Wise Stock Summary</h3>
+    <div id="categoery-stock-summary">
+        <div id="summary-table">
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
